@@ -212,11 +212,20 @@
                         <input type="email" id="email" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" />
                     </div>
                     <div class="w-full px-4 mb-8">
+                        <label for="subject" class="text-base font-bold text-primary">Subject</label>
+                        <select id="subject" class="w-full bg-slate-200 text-dark p-4 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" >
+                            <option></option>
+                            <option value="I'm hiring">I'm hiring</option>
+                            <option value="Let's Collaboration">Let's Collaboration</option>
+                            <option value="Let's Talk">Let's Talk</option>
+                        </select>
+                    </div>
+                    <div class="w-full px-4 mb-8">
                         <label for="message" class="text-base font-bold text-primary">Message</label>
                         <textarea type="text" id="message" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"></textarea>
                     </div>
                     <div class="w-full px-4">
-                        <button class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Send</button>
+                        <button onclick="submitForm()" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Send</button>
                     </div>
                 </div>
             </form>
